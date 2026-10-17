@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/pybind/pybind11/commit/6254086d96062249c5153c17eab6b4437dd1589f",
       "git:hexsha": "6254086d96062249c5153c17eab6b4437dd1589f",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-17T22:44:11.209806+00:00"
     },
     {
       "@id": "https://repolex.ai/r/pybind/pybind11/commit/929fd7e6946255ed84c803d2993f48912de96e15",
