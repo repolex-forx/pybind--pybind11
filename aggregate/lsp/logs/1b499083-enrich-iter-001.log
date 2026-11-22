@@ -1,0 +1,97 @@
+[2026-11-22T03:37:06Z] === ENRICH ITERATION 1 START | repo=pybind/pybind11 sha=1b499083 ===
+[2026-11-22T03:37:06Z] [iter=1] PHASE START: enrich repo=pybind/pybind11 sha=1b499083 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1b499083-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1b4990838904501de7110d27e96c0a4152029156.nq.gz
+[2026-11-22T03:37:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T03:37:29Z] [iter=1] AST store loaded triples=2671544 load_secs=22 mem_mb=891 MB
+[2026-11-22T03:37:29Z] [iter=1] Step 2: Finding LSP targets mem_mb=891 MB
+[2026-11-22T03:37:34Z] [iter=1] LSP targets found call_sites=22724 imports=629 extends=354 implements=0 secs=5
+[2026-11-22T03:37:37Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=891 MB
+[2026-11-22T03:37:53Z] [iter=1] Position index built positions=163805 nodes_with_types=211662 secs=17 mem_mb=891 MB
+[2026-11-22T03:37:53Z] [iter=1] Step 3: Starting LSP resolution mem_mb=891 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T03:37:53Z] [iter=1] Resolving target type target_type=call_site count=22724
+[2026-11-22T03:38:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.9 files_done=0 resolved=0 errors=0 current=include/pybind11/pybind11.h
+[2026-11-22T03:52:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=1 resolved=664 errors=0 current=tests/test_methods_and_attributes.cpp
+[2026-11-22T03:52:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.7 files_done=3 resolved=705 errors=0 current=include/pybind11/cast.h
+[2026-11-22T04:00:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.3 files_done=4 resolved=1134 errors=0 current=tests/test_operator_overloading.cpp
+[2026-11-22T04:00:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=23.8 files_done=5 resolved=1162 errors=0 current=include/pybind11/detail/init.h
+[2026-11-22T04:02:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=6 resolved=1245 errors=0 current=tests/test_factory_constructors.cpp
+[2026-11-22T04:04:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.9 files_done=7 resolved=1321 errors=0 current=include/pybind11/detail/class.h
+[2026-11-22T04:05:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.6 files_done=8 resolved=1406 errors=0 current=include/pybind11/stl_bind.h
+[2026-11-22T04:09:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.1 files_done=9 resolved=1531 errors=0 current=tests/test_builtin_casters.cpp
+[2026-11-22T04:10:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.2 files_done=11 resolved=1614 errors=0 current=tests/test_opaque_types.cpp
+[2026-11-22T04:12:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.4 files_done=15 resolved=1730 errors=0 current=tests/test_callbacks.cpp
+[2026-11-22T04:13:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.6 files_done=17 resolved=1801 errors=0 current=tests/test_stl_binders.cpp
+[2026-11-22T04:14:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.3 files_done=20 resolved=1838 errors=0 current=tests/test_numpy_array.cpp
+[2026-11-22T04:15:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=38.4 files_done=21 resolved=1889 errors=0 current=include/pybind11/pytypes.h
+[2026-11-22T04:22:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.6 files_done=22 resolved=2254 errors=0 current=tests/test_type_caster_pyobject_ptr.cpp
+[2026-11-22T04:23:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.6 files_done=26 resolved=2303 errors=0 current=tests/test_native_enum.cpp
+[2026-11-22T04:26:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=29 resolved=2369 errors=0 current=tests/test_modules.cpp
+[2026-11-22T04:27:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.3 files_done=33 resolved=2420 errors=0 current=tests/test_constants_and_functions.cpp
+[2026-11-22T04:29:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.3 files_done=36 resolved=2529 errors=0 current=tests/test_multiple_inheritance.cpp
+[2026-11-22T04:36:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.1 files_done=38 resolved=2961 errors=0 current=tests/test_with_catch/test_subinterpreter.cpp
+[2026-11-22T04:38:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.9 files_done=39 resolved=3050 errors=0 current=tests/pure_cpp/smart_holder_poc_test.cpp
+[2026-11-22T04:39:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.6 files_done=40 resolved=3095 errors=0 current=tests/test_warnings.cpp
+[2026-11-22T04:40:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.7 files_done=42 resolved=3161 errors=0 current=tests/test_buffers.cpp
+[2026-11-22T04:41:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.4 files_done=44 resolved=3209 errors=0 current=tests/test_gil_scoped.cpp
+[2026-11-22T04:45:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.6 files_done=47 resolved=3463 errors=0 current=tests/test_stl.cpp
+[2026-11-22T04:46:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.7 files_done=48 resolved=3522 errors=0 current=include/pybind11/subinterpreter.h
+[2026-11-22T04:47:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.7 files_done=50 resolved=3581 errors=0 current=include/pybind11/gil_simple.h
+[2026-11-22T04:48:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.2 files_done=55 resolved=3633 errors=0 current=tests/test_class_sh_inheritance.cpp
+[2026-11-22T04:49:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.9 files_done=57 resolved=3724 errors=0 current=tests/test_potentially_slicing_weak_ptr.cpp
+[2026-11-22T04:49:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.5 files_done=60 resolved=3750 errors=0 current=tests/test_class_sh_factory_constructors.cpp
+[2026-11-22T04:50:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.3 files_done=64 resolved=3795 errors=0 current=tests/test_class_sh_mi_thunks.cpp
+[2026-11-22T04:50:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.9 files_done=66 resolved=3831 errors=0 current=tests/test_class_release_gil_before_calling_cpp_dtor.cpp
+[2026-11-22T04:51:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.6 files_done=70 resolved=3863 errors=0 current=include/pybind11/detail/function_record_pyobject.h
+[2026-11-22T04:52:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.3 files_done=73 resolved=3907 errors=0 current=include/pybind11/detail/argument_vector.h
+[2026-11-22T04:53:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.1 files_done=74 resolved=3979 errors=0 current=include/pybind11/operators.h
+[2026-11-22T04:53:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.8 files_done=75 resolved=4019 errors=0 current=tests/mod_per_interpreter_gil_with_singleton.cpp
+[2026-11-22T04:54:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.7 files_done=77 resolved=4077 errors=0 current=tests/object.h
+[2026-11-22T04:55:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.2 files_done=79 resolved=4107 errors=0 current=include/pybind11/detail/common.h
+[2026-11-22T04:56:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.4 files_done=80 resolved=4177 errors=0 current=tests/test_custom_type_casters.cpp
+[2026-11-22T04:57:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.0 files_done=85 resolved=4210 errors=0 current=tests/test_cmake_build/embed.cpp
+[2026-11-22T04:57:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=87 resolved=4246 errors=0 current=include/pybind11/typing.h
+[2026-11-22T04:58:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.8 files_done=88 resolved=4299 errors=0 current=tests/mod_shared_interpreter_gil.cpp
+[2026-11-22T04:59:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.4 files_done=94 resolved=4331 errors=0 current=include/pybind11/detail/descr.h
+[2026-11-22T05:02:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.2 files_done=95 resolved=4371 errors=0 current=tests/test_numpy_vectorize.cpp
+[2026-11-22T05:03:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.1 files_done=98 resolved=4440 errors=0 current=include/pybind11/gil.h
+[2026-11-22T05:03:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.7 files_done=102 resolved=4472 errors=0 current=tests/test_enum.cpp
+[2026-11-22T05:04:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.2 files_done=104 resolved=4498 errors=0 current=tests/test_class_sh_disowning_mi.cpp
+[2026-11-22T05:04:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.7 files_done=108 resolved=4523 errors=0 current=tests/test_python_multiple_inheritance.cpp
+[2026-11-22T05:06:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.1 files_done=113 resolved=4622 errors=0 current=tests/test_cpp_conduit_traveler_bindings.h
+[2026-11-22T05:07:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.9 files_done=117 resolved=4672 errors=0 current=tests/test_eval.cpp
+[2026-11-22T05:07:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.4 files_done=123 resolved=4700 errors=0 current=tests/test_vector_unique_ptr_member.cpp
+[2026-11-22T05:08:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.0 files_done=131 resolved=4728 errors=0 current=include/pybind11/detail/dynamic_raw_ptr_cast_if_possible.h
+[2026-11-22T05:08:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.5 files_done=137 resolved=4751 errors=0 current=tests/mod_per_interpreter_gil.cpp
+[2026-11-22T05:09:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.2 files_done=147 resolved=4776 errors=0 current=tests/exo_planet_pybind11.cpp
+[2026-11-22T05:10:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.9 files_done=152 resolved=4919 errors=0 current=tests/test_kwargs_and_defaults.py
+[2026-11-22T05:10:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.8 files_done=153 resolved=4979 errors=0 current=tests/test_gil_scoped.py
+[2026-11-22T05:11:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.7 files_done=155 resolved=5117 errors=0 current=tests/test_numpy_vectorize.py
+[2026-11-22T05:12:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.2 files_done=156 resolved=5155 errors=0 current=tests/test_native_enum.py
+[2026-11-22T05:13:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.4 files_done=158 resolved=5252 errors=0 current=tests/test_pytypes.py
+[2026-11-22T05:15:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.9 files_done=159 resolved=5465 errors=0 current=tests/test_methods_and_attributes.py
+[2026-11-22T05:17:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.9 files_done=161 resolved=5605 errors=0 current=tests/test_async.py
+[2026-11-22T05:19:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.0 files_done=165 resolved=5850 errors=0 current=tests/test_iostream.py
+[2026-11-22T05:20:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.5 files_done=167 resolved=6030 errors=0 current=tests/test_standalone_enum_module.py
+[2026-11-22T05:21:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.5 files_done=170 resolved=6110 errors=0 current=tests/test_enum.py
+[2026-11-22T05:22:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.7 files_done=172 resolved=6243 errors=0 current=tests/test_exceptions.py
+[2026-11-22T05:23:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.3 files_done=173 resolved=6304 errors=0 current=tests/test_eigen_tensor.py
+[2026-11-22T05:24:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.9 files_done=175 resolved=6396 errors=0 current=tests/test_class.py
+[2026-11-22T05:24:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.4 files_done=176 resolved=6478 errors=0 current=tests/conftest.py
+[2026-11-22T05:25:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.0 files_done=178 resolved=6550 errors=0 current=tests/test_cpp_conduit.py
+[2026-11-22T05:25:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.6 files_done=183 resolved=6695 errors=0 current=docs/conf.py
+[2026-11-22T05:26:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.4 files_done=188 resolved=6835 errors=0 current=tests/test_multiple_inheritance.py
+[2026-11-22T05:27:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.2 files_done=189 resolved=6903 errors=0 current=tests/test_pickling.py
+[2026-11-22T05:27:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.7 files_done=192 resolved=6997 errors=0 current=tests/test_class_sh_mi_thunks.py
+[2026-11-22T05:28:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.4 files_done=195 resolved=7073 errors=0 current=tests/test_class_release_gil_before_calling_cpp_dtor.py
+[2026-11-22T05:29:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.1 files_done=201 resolved=7208 errors=0 current=tests/test_multiple_interpreters.py
+[2026-11-22T05:29:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.6 files_done=210 resolved=7328 errors=0 current=tests/test_class_sh_trampoline_self_life_support.py
+[2026-11-22T05:30:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.3 files_done=226 resolved=7470 errors=0 current=tests/test_scoped_critical_section.py
+[2026-11-22T05:30:47Z] [iter=1] Target type resolved target_type=call_site resolved=7539 errors=0 secs=6773 mem_mb=891 MB
+[2026-11-22T05:30:47Z] [iter=1] Resolving target type target_type=import_statement count=629
+[2026-11-22T05:30:51Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=113.8 files_done=93 resolved=222 errors=0 current=include/pybind11/subinterpreter.h
+[2026-11-22T05:31:21Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=114.3 files_done=199 resolved=410 errors=0 current=include/pybind11/eigen.h
+[2026-11-22T05:31:29Z] [iter=1] Target type resolved target_type=import_statement resolved=446 errors=0 secs=43 mem_mb=891 MB
+[2026-11-22T05:31:29Z] [iter=1] Resolving target type target_type=extends_clause count=354
+[2026-11-22T05:31:47Z] [iter=1] Target type resolved target_type=extends_clause resolved=347 errors=0 secs=18 mem_mb=891 MB
+[2026-11-22T06:37:29Z] [iter=1] Step 5: Writing final enrichment file triples=127739
+[2026-11-22T06:37:31Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/1b4990838904501de7110d27e96c0a4152029156.nq.gz size_kb=2840
+[2026-11-22T06:37:31Z] [iter=1] PHASE END: enrich elapsed_s=10825 elapsed_min=180.4 total_triples=127739
